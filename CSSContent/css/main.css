@@ -1,0 +1,74 @@
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+    font-size: 25px;
+}
+.foot {
+    width: 100%;
+    height: 100px;
+}
+.contain {
+    width: 70%;
+    /*margin: 0 2%;*/
+    //margin: 0 auto;
+    position: relative;
+    left: 10%;
+    padding-right: 20px;
+}
+.nav {
+    float: right;
+    top: 5%;/*距离顶部5%的距离*/
+    right: 1%;/*距离右边1%的距离*/
+}
+.nav ul{
+    list-style: none;/*去掉a标签的.*/
+    font-size: 20px;
+}
+.nav li {
+    border: solid 1px rgba(0, 0, 255, 0.16);
+    text-align: left;
+    box-shadow: -2px 2px 6px rgba(5, 3, 4, 0.11);/*设置阴影样式,分别是水平距离 垂直距离 模糊尺寸 颜色*/
+    border-radius: 10px;/*设置圆角样式*/
+    outline-style: none;
+}
+.nav a {
+    text-decoration: none;/*去掉a标签的下划线*/
+    color: blue;/*字体颜色为蓝色*/
+    display: block;/*行级元素转化为块级元素*/
+    padding: 1px 15px;/*内边距 上下1个像素 左右15像素*/
+}
+.nav a:hover, .selected {
+    color: #ffffff;/*鼠标放上去时显示为白色*/
+    background-color: #000000;/*背景颜色为黑色*/
+}
+
+.code {
+    border: 1px solid #e6e6e6;
+    padding: 5px 0px 5px 10px;
+    background-color: #e6e6e6;
+    white-space: pre-wrap;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 2;
+    text-align: center;
+
+}
+table tr,table td,table th {
+    border: solid 1px #000000;
+    word-wrap: break-word;
+}
+table th {
+    background-color: #e6e6e6;
+}
+h2 {
+    background-color: #e6e6e6;
+}
+
+span {
+    color: red;
+    font-weight: bolder;
+}

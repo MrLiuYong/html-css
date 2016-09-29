@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        .divf {
+            background-color: #00bfbf;
+            width: 500px;
+            height: 400px;
+        }
+        .div1, .div2, .div3{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .div1 {
+            background-color: red;
+        }
+        .div2 {
+            background-color: green;
+            position: relative;
+            left: 50px;
+            top:120px;
+        }
+        .div3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="divf">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</div>
+</body>
+</html>

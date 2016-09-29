@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+    font-size: 13px;
+}
+.clear {
+    clear: both;
+}
+.nav, .footer {
+    width: 100%;
+}
+
+.nav {
+    background: linear-gradient(to bottom, #2e6da4, #5bc0de);
+    height: 70px;
+}
+.nav-contain {
+    width: 88%;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    font-size: 3em;
+}
+.nav-contain > div {
+    display: inline-block;
+}
+.logo {
+     color: #ffffff;
+   vertical-align: top; /*此元素与其兄弟元素垂直对齐*/
+    margin: 0 auto
+}
+.content{
+    color: #ffffff;
+    width:100px;
+    margin-left: 100px;
+}
+/*.content{
+    margin-left: 80px;
+   *//* border: solid 2px ;*//*
+    color: #ffffff;
+    width: 80px;
+    padding-left: 180px;
+    *//*padding-right: 100px;*//*
+}*/
+#serach, #submit {
+    height: 30px;
+    border-style: none;
+    margin: 0px auto;
+}
+#serach {
+    color: #ffffff;
+    width: 150px;
+    margin-left: 50px;
+   /* border-radius: 10px 0 0 10px;*/
+    padding-left: 80px;
+    outline-style: none;
+}
+#submit {
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    background-color: #5bc0de;
+    color: #FFFFEE;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.opertor {
+    float: right;
+    padding-right: 100px;
+    /*text-align: center;
+    vertical-align: middle;*/
+}
+#question, #login, #register {
+    height: 30px;
+    width: 100px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #5bc0de;
+    color: #FFFFEE;
+    font-size: 14px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+.my-icon {
+    margin-left: 50px;
+}
+.my-icon,.my-uname, .my-quit {
+    display: inline-block;
+    vertical-align: middle;
+    //margin-left: 20px;
+}
+.my-uname {
+}
+.my-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.my-uname {
+    font-size: 14px;
+    color: #FFFFEE;
+}
+.my-quit {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: bolder;
+    //border: solid 1px #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #5bc0de;
+}
+.my-quit a, .my-quit a:hover, .my-quit a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-content {
+    width: 1200px;
+    //background-color: #e6e6e6;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.right-nav {
+    width: 150px;
+    height: 500px;
+    float: right;
+    text-align: center;
+}
+.right-nav li{
+    list-style: none;
+    text-align: left;/*文本向左对齐*/
+    border-radius: 5px;
+    border: solid 1px #0e9bc6;/*加边框*/;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.33);/*文本阴影*/
+}
+.right-nav a{
+    color: #0000ff;/*设置文本颜色*/
+    display: block;
+    text-decoration: none;/*去掉a标签下划线*/
+    padding: 2px 15px ;/*上下间距8像素 左右间距15像素*/
+}
+.right-nav a:hover,.selected{
+    color: #ffffff;/*鼠标放上去时字体显示为白色*/
+    background-color:midnightblue; /*设置背景颜色*/
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.menu {
+    font-size: 14px;
+}
+.menu-nav-list {
+    box-shadow: 0 1px 4px rgba(0,0,0,.165);
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.menu-nav-list > li {
+    line-height: 1.5em;
+}
+.menu-nav-list > li:first-child > a {/*设置a标签的第一个列表项为圆角样式*/
+    border-radius: 6px 6px 0 0;
+}
+.menu-nav-list >li > a {
+    border: 1px solid #e5e5e5;
+    padding: 8px 14px;
+    color: #08c;
+    display: block;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    margin: 0 0 -1px;
+}
+.menu-nav-list > li > a:hover {
+    background-color: #f5f5f5;
+    color: #005580;
+}
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    color: #259;
+}
+
+
+
+
+
+.left-content {
+    width: 888px;
+    color: #0066cc;
+    float: left;
+}
+.title {
+    padding-left: 280px;
+    padding-bottom: 5px;
+    /*border-bottom: solid 1px #ccc;*/
+}
+.other{
+    text-align: center;
+    margin-top: 5px;
+    border:solid 2px;
+    width: 180px;
+    line-height: 100px;/*内容居中对齐*/
+    height:100px;
+    /*position: fixed;*//*文本框随页面上下浮动*/
+   /* float: left;*//*像左浮动*/
+}
+.left-nav{
+     /*font-size: 14px;*/
+     border-style: none;
+     width: 180px;
+     height: 500px;
+     margin-top: 20px;
+     text-align: center;
+}
+.left-nav:hover{
+    cursor: pointer;
+}
+.left-div1{
+    padding-top: 30px;
+}
+.left-div1:hover .left-div2,.left-div3:hover .left-div4{
+    cursor: pointer;
+    display: block;
+}
+.left-div3{
+    padding-top: 40px;
+}
+.left-div2,.left-div4{
+    display: none;
+}
+/*.left-div4{
+    display: none;
+}*/
+.left-nav li{
+    list-style: none;
+    border: solid 1px #0e9bc6;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.33);/*文本阴影*/
+    border-radius: 10px;
+}
+.left-nav a{
+    display: block;/*把行级元素转化为块级元素*/
+    text-decoration: none;/*去掉a标签下划线*/
+    padding: 5px 15px;/*上下间距2像素 左右间距15像素*/
+}
+.left-nav a:hover{
+    border-radius: 10px ;
+    color: #ffffff;
+    background-color: #000033;
+}
+
+
+
+
+
+.main-body {
+    width: 70%;
+    height: 80%;
+    float: right;
+    border-top: solid 2px #ccc;
+    margin-top: 10px;
+}
+ .line{
+     width: 100%;
+     margin-top: 4px;
+ }
+
+ /*评论*/
+.answer-contain {
+    margin-top: 20px;
+    font-size: 15px;
+    border-bottom: solid 2px #eee;
+}
+.answerer-info {
+    overflow: hidden;
+}
+.answerer-name {
+    font-weight: bolder;
+    float: left;
+    font-size: 16px;
+}
+.anserer-attr {
+    float: left;
+    margin-left: 10px;
+    color: #999;
+    font-size: 14px;
+}
+.answer-content {
+    margin-top: 10px;
+    line-height: 2;
+}
+.answer-content pre {
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+.answer-attr {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.edit-time{
+    float: left;
+    color: #999;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;/*设置圆角样式*/
+}
+.uname {
+    color: #3c763d;
+}
+/*  问题区域  */
+.question-content {
+    width: 640px;
+    float: right;
+}
+/*  问题标题 */
+.question-title {
+    font-weight: bolder;
+    font-size: 16px;
+}
+.createtime {
+    font-size: 12px;
+}
+/*  问题详情  */
+.question-detail {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 2em;
+}
+/* 问题底部 */
+.question-bottom {
+    margin-top: 15px;
+    overflow: hidden;
+
+}
+.attation, .attation-amount, .question-amount {
+    float: left;
+    margin-right: 20px;
+    color: #999;
+}
+
+
+.footer{
+    height: 50px;
+    margin-top: 280px;
+    background-color: #1b6d85;
+}
+/*  回答问题 */
+.replay-contain {
+    margin-top: 20px;
+}
+#replaycontent {
+    width: 100%;
+    line-height: 1.5;
+    padding: 5px;
+    border-radius: 5px;
+}
+#replay {
+    border-style: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #5bc0de;
+    color: #FFFFEE;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.myquestin-anonymity {
+    margin: 10px 0;
+}
+.myquestin-anonymity label {
+    margin-right: 10px;
+}
+
+
+
+
+.contain{
+    font-size: 0.5cm;
+    width: 90%;
+    border: dotted 1px solid;
+    /* color: #ffffff;*/
+    /* margin-top: 20px;*/
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*padding-left: 200px;*/
+}
+
+table{
+    border-collapse: collapse;
+    line-height: 2;
+    border-spacing: 0;
+    width:100%;
+    text-align: center;
+}
+table *{
+    border: 1px solid ;
+
+}
+table th{
+    background-color: #4A8091;
+}
+table td{
+    background-color: #c7ddef;
+}
+.contain h1{
+    font-family: 微软雅黑, 宋体, Arial;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 5px 10px 5px 10px;
+    background-color: #4A8091;
+}
+.contain h3{
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 5px 0px 5px 10px;
+    background-color: #31b0d5;
+}

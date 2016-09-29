@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS绝对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .divf {
+            background-color: #e6e6e6;
+            margin-top: 100px;
+            margin-left: 50px;
+            position: relative;
+            overflow: visible;
+        }
+        .div1, .div2 {
+            width: 100px;
+            height: 100px;
+        }
+        .div1 {
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+        .div2 {
+            background-color: green;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="divf">
+    <div class="div1"></div>
+    <div class="div2"></div>
+</div>
+
+</body>
+</html>

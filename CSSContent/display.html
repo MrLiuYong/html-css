@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css显示</title>
+    <style>
+        .nav {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #d4d4d4;
+        }
+        .nav ul
+        {
+            list-style: none;
+        }
+        .nav ul li {
+            display: inline-block;
+            margin: 20px;
+        }
+        #menu:hover {
+            visibility: hidden;
+        }
+        #menu {
+            visibility: visible;
+            background-color: green;
+        }
+        ul.menu li {
+            display: block;
+        }
+
+
+
+        #test {
+            position: relative;
+            //top:100px;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li>首页</li>
+        <li id="kecheng">课程
+            <ul id="menu" class="menu">
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </li>
+        <li>关于</li>
+    </ul>
+</div>
+
+
+<div id="test"></div>
+
+<button onclick="show()">CLICK</button>
+<script>
+    function show() {
+        var obj = document.getElementById("test");
+        var ofset  = obj.offsetTop;
+
+        var nod = document.createElement("style");
+        str = "@keyframes mymove\
+        {\
+            from {top:0px;}\
+            to {top:" + ofset + "px;}\
+        }";
+        nod.type = "text/css";
+        nod.innerHTML = str;
+        document.getElementsByTagName("head")[0].appendChild(nod);
+
+
+        obj.style.animation = "mymove 5s infinite";
+        obj.style.backgroundColor = "blue";
+
+        console.log(obj.offsetTop);
+
+
+    }
+</script>
+
+</body>
+</html>

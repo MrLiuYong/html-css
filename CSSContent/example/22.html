@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        [name] {
+            color: red;
+        }
+        p[name] {
+            font-size: 20px;
+        }
+        [style][width] {
+            background-color: #0F769F;
+        }
+        [style="font-weight: bolder"] {
+            border: solid 1px red;
+        }
+        [style~="font-style:"] {
+            outline-style: dashed;
+        }
+        [class~="xxh"]{
+            outline-style: double;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 name="专家说的">PHP 是最好的语言</h1>
+<p name="技术达人说的" style="font-style: italic">PHP 是一门快速开发的语言</p>
+<p style="font-weight: bolder;font-style: italic;">这是一段测试文字</p>
+<div width="20" style="color: green">div 测试</div>
+
+<p class="code xxh">代码区域</p>
+
+
+</body>
+</html>
